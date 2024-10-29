@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./CSS/styles.css"?>
+<catalogo>
+	<libro>
+		<titulo>Clean Code</titulo>
+		<autor>Robert C. Martin</autor>
+		<año>2008</año>
+		<editor>Prentice Hall</editor>
+	</libro>
+	<libro>
+		<titulo>The Art of Computer Programming</titulo>
+		<autor>Donald Knuth</autor>
+		<año>1968</año>
+		<editor>Addison-Wesley</editor>
+	</libro>
+	<libro>
+		<titulo>Code Complete</titulo>
+		<autor>Steve McConnell</autor>
+		<año>2004</año>
+		<editor>Microsoft Press</editor>
+	</libro>
+	<libro>
+		<titulo>Python para todos</titulo>
+		<autor>Charles Severance</autor>
+		<año>2020</año>
+		<editor>Sue Blumenberg</editor>
+	</libro>
+</catalogo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./CSS/estilo-empleados.css"?>
+
+<empleados>
+	<departamentos Ventas= "001" Finanzas= "002" Marketing= "003"/>
+	<empleado1>
+		<nombre>Ana</nombre>
+		<apellido>García</apellido>
+		<edad>30</edad>
+		<cargo>Ejecutivo en ventas</cargo>
+		<departamento>Ventas</departamento>
+	</empleado1>
+	<empleado2>
+		<nombre>Luis</nombre>
+		<apellido>Rodríguez</apellido>
+		<edad>45</edad>
+		<cargo>Analista Financiero</cargo>
+		<departamento>Finanzas</departamento>
+	</empleado2>
+	<empleado3>
+		<nombre>María</nombre>
+		<apellido>López</apellido>
+		<edad>28</edad>
+		<cargo>Especialista en redes sociales</cargo>
+		<departamento>Marketing</departamento>
+	</empleado3>
+</empleados>
+
+
+
+
+		

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./CSS/agenda-estilo.css"?>
+<agenda>
+	<persona>
+		<nombre>Juan</nombre>
+		<apellidos>Pérez Gómez</apellidos>
+		<direccion>
+			<calle>Calle Falsa 123</calle>
+			<ciudad>Madrid</ciudad>
+			<codigopostal>28880</codigopostal>
+		</direccion> 
+		<telefonos>
+			<telefono.casa>912345678</telefono.casa> 
+			<telefono.movil>678912345</telefono.movil>
+			<telefono.trabajo>913456789</telefono.trabajo>
+		</telefonos>
+	</persona>
+	<persona>
+		<nombre>Ana</nombre>
+		<apellidos>Martínez López</apellidos>
+		<direccion>
+			<calle>Av. Siempreviva 456</calle>
+			<ciudad>Barcelona</ciudad>
+			<codigopostal>08080</codigopostal>
+		</direccion>
+		<telefonos>
+			<telefono.casa>932345678</telefono.casa> 
+			<telefono.movil>698712345</telefono.movil>
+			<telefono.trabajo>686940774</telefono.trabajo>
+		</telefonos>
+	</persona>
+</agenda>

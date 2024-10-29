@@ -1,0 +1,32 @@
+agenda {
+	background-color: #eeeee4;
+	font-family: ui-sans-serif;
+	padding: 20px;
+}
+
+persona{
+	display: table;
+	border: 1px sólid #ccc;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+	margin-bottom: 15px;
+	padding: 15px;
+	border-radius: 50px;
+	background-color: #fff;
+}
+nombre {
+	font-weight: 20px, bold;
+	color: #063970;
+}
+
+direccion {
+	color: #5e0200;
+	codigopostal{
+		font-weight: 20px, bold;
+		color: #d9e40c;
+	}
+}
+
+
+telefonos {
+	color: #137708;
+}

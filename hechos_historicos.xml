@@ -1,0 +1,12 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+
+<hechos_historicos>
+	<hecho descripción = "IBM da a conocer el PC">
+		<fecha>
+			<dia>12</dia>
+			<mes>8</mes>
+			<año>1981</año>
+		</fecha>
+	</hecho>
+	<hecho descripción = "Se funda Google">
+	

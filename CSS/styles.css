@@ -1,0 +1,35 @@
+catalogo {
+	font-family: Segoe Ul, sans-serif;
+	color: #333;
+	background-color: #f2f2f2;
+	padding: 20px; 
+}
+
+libro {
+	border: 1px sólid #ccc;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+	margin-bottom: 15px;
+	padding: 15px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+
+titulo {
+	font-weight: 20px, bold;
+	color: #007bff;
+}
+
+autor {
+	font-style: 15px, italic;
+	color: #555;
+}
+
+año {
+	font: 16px;
+	color: #666;
+}
+
+editor {
+	font: 16px;
+	color: #666;
+}
