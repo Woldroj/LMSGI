@@ -1,0 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head><title>Ejemplo de index.html</title></head>
+    <body bgcolor="#e3d6d6" text="#171616">
+        <h3 align="left" bgcolor="#e59705">Ulises Plata Piñero</h3>
+        <h2 align="left">Lenguaje de Marcas 1ºDAW</h2>
+        <hr>
+        <h1 align="left" bgcolor="#043ecd">TEMA 1: Introducción a los Lenguajes de Marcas</h1>
+        <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 1/XML/fechas.xml" target="_blank">Abrir la actividad</a><br>
+    </body>
+</html>
