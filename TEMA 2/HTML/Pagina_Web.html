@@ -1,16 +1,98 @@
 <!DOCTYPE HTML>
 <html>
-    <head><title>Ejemplo de index.html</title></head>
-    <body bgcolor="#e3d6d6" text="#171616">
-    <h3 align="left" bgcolor="#e59705">Ulises Plata Piñero</h3>
-    <h2 align="left">Lenguaje de Marcas 1ºDAW</h2>
-    <hr>
-    <h1 align="left" bgcolor="#043ecd">TEMA 1: Introducción a los Lenguajes de Marcas</h1>
-    <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 1/XML/fechas.xml" target="_blank">Abrir actividad</a>
-    <a href="C://Users/DAW/Desktop/LMSGI/TEMA 1/XML/fechas.xml" target="_blank">Abrir actividad</a>
-    <hr>
-    <h1 align="left" bgcolor="#043ecd">TEMA 2: HTML</h1>
-    <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 2/HTML/Ej 1 listas/Zprueba3.html" target="_blank">Abrir actividad</a>
-    <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 2/HTML/Ej 2 tablas/ZHorario.html" target="_blank">Abrir Horario</a>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de index.html</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #043ecd;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 10px;
+        }
+
+        h1 {
+            background-color: #043ecd;
+            color: white;
+        }
+
+        h3 {
+            background-color: #e59705;
+            color: white;
+        }
+
+        .container {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #e59705;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #bf7f02;
+        }
+
+        hr {
+            border: 1px solid #ddd;
+        }
+
+        footer {
+            background-color: #043ecd;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>Ulises Plata Piñero</h3>
+        <h2>Lenguaje de Marcas 1ºDAW</h2>
+    </header>
+    <div class="container">
+        <section>
+            <h1>TEMA 1: Introducción a los Lenguajes de Marcas</h1>
+            <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 1/XML/fechas.xml" target="_blank" class="btn">Abrir actividad - Tema 1</a>
+            <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 1/XML/empleados.xml" target="_blank" class="btn">Abrir actividad - Tema 1</a>
+        </section>
+
+        <section>
+            <h1>TEMA 2: HTML</h1>
+            <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 2/HTML/Ej 1 listas/Zprueba3.html" target="_blank" class="btn">Abrir actividad - Ej 1</a>
+            <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 2/HTML/Ej 2 tablas/ZHorario.html" target="_blank" class="btn">Abrir Horario</a>
+        </section>
+    </div>
+</body>
 </html>
