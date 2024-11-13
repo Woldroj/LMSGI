@@ -2,15 +2,15 @@
 <html>
     <head><title>Ejemplo de index.html</title></head>
     <body bgcolor="#e3d6d6" text="#171616">
-        <h3 align="left" bgcolor="#e59705">Ulises Plata Piñero</h3>
-        <h2 align="left">Lenguaje de Marcas 1ºDAW</h2>
-        <hr>
-        <h1 align="left" bgcolor="#043ecd">TEMA 1: Introducción a los Lenguajes de Marcas</h1>
-        <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 1/XML/fechas.xml" target="_blank">Abrir actividad</a>
-        <a href="C://Users/DAW/Desktop/LMSGI/TEMA 1/XML/fechas.xml" target="_blank">Abrir actividad</a>
-        <hr>
-        <h1 align="left" bgcolor="#043ecd">TEMA 2: HTML</h1>
-        <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 2/HTML/Ej 1 listas/Zprueba3.html" target="_blank">Abrir actividad</a>
-        <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 2/HTML/Ej 2 tablas/ZHorario.html" target="_blank">Abrir actividad</a>
+    <h3 align="left" bgcolor="#e59705">Ulises Plata Piñero</h3>
+    <h2 align="left">Lenguaje de Marcas 1ºDAW</h2>
+    <hr>
+    <h1 align="left" bgcolor="#043ecd">TEMA 1: Introducción a los Lenguajes de Marcas</h1>
+    <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 1/XML/fechas.xml" target="_blank">Abrir actividad</a>
+    <a href="C://Users/DAW/Desktop/LMSGI/TEMA 1/XML/fechas.xml" target="_blank">Abrir actividad</a>
+    <hr>
+    <h1 align="left" bgcolor="#043ecd">TEMA 2: HTML</h1>
+    <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 2/HTML/Ej 1 listas/Zprueba3.html" target="_blank">Abrir actividad</a>
+    <a href="C:/Users/DAW/Desktop/LMSGI/TEMA 2/HTML/Ej 2 tablas/ZHorario.html" target="_blank">Abrir actividad</a>
     </body>
 </html>
