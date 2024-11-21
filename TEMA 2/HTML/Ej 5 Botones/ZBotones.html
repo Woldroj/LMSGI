@@ -20,6 +20,13 @@
 
         }
 
+        table {
+            background-color: #f4f4f4;
+            color: #f4f4f4
+            
+
+        }
+
     </style>
     <head><title>Formulario</title></head>
     <body>
@@ -45,21 +52,27 @@
             </p>
         </form>
         <br>
-        <h2 align="center">Que tipo de juegos te gustan</h2>
-        <form action>
-            <p align="center">
-                <input type="radio" name="juego" value="primera persona">Primera persona
-                <input type="radio" name="juego" value="historia">Historia
-                <br>
-                <input type="radio" name="juego" value="shooters">Shooters
-                <input type="radio" name="juego" value="mundo abierto">Mundo abierto
-                <br>
-                <input type="radio" name="juego" value="puzzles">Puzzles
-                <input type="radio" name="juego" value="tercera persona">Tercera persona
-                <br>
-                <input type="radio" name="juego" value="retro">Retro
-                <input type="radio" name="juego" value="Indie">Indie
-            </p>
-        </form>
+        <table align="center" border="2" cellpadding="20"></table>
+            <tr><td>
+                <h2 align="center">Que tipo de juegos te gustan</h2>
+                <form action>
+                    <p align="center">
+                        <input type="checkbox" name="juego" value="primera persona">Primera persona
+                        <input type="checkbox" name="juego" value="historia">Historia
+                        <br>
+                        <input type="checkbox" name="juego" value="shooters">Shooters
+                        <input type="checkbox" name="juego" value="mundo abierto">Mundo abierto
+                        <br>
+                        <input type="checkbox" name="juego" value="puzzles">Puzzles
+                        <input type="checkbox" name="juego" value="tercera persona">Tercera persona
+                        <br>
+                        <input type="checkbox" name="juego" value="retro">Retro
+                        <input type="checkbox" name="juego" value="Indie">Indie
+                        <br>
+                        <p align="center"><input type="submit" value="enviar"></p>
+                    </p>
+                </form>
+            </td></tr>
+        </table>
     </body>
 </html>
