@@ -2,8 +2,9 @@
 <html>
     <style>
         body {
+            text-align: left;
             font-family: 'Roboto', sans-serif;
-            background-color: #333;
+            background-color: #17a589;
             color: #f5f1f1;
             margin: 0;
             padding: 0;
@@ -11,7 +12,7 @@
 
         h2 {
             font-family: 'Roboto', sans-serif;
-            background-color: #a70c0c;
+            background-color: #332F21;
             color: #f4f4f4;
             margin: 0;
             margin-left: 250px;
@@ -21,10 +22,11 @@
         }
 
         table {
-            background-color: #f4f4f4;
-            color: #f4f4f4
-            
-
+            text-align: left;
+            background-color: #17a589;
+            margin-left: 40%;
+            margin-top: -65px;
+            border-color: #332F21;
         }
 
     </style>
@@ -32,6 +34,7 @@
     <body>
         <h2 align="center">Formulario</h2>
         <form action>
+            
             <p align="center">Introduzca su nombre: <input type="text" name="nombre"></p>
             <br>
             <p align="center">Introduzca su clave: <input   type="password" nome="clave"></p>
@@ -52,27 +55,25 @@
             </p>
         </form>
         <br>
-        <table align="center" border="2" cellpadding="20"></table>
-            <tr><td>
-                <h2 align="center">Que tipo de juegos te gustan</h2>
-                <form action>
-                    <p align="center">
-                        <input type="checkbox" name="juego" value="primera persona">Primera persona
-                        <input type="checkbox" name="juego" value="historia">Historia
-                        <br>
-                        <input type="checkbox" name="juego" value="shooters">Shooters
-                        <input type="checkbox" name="juego" value="mundo abierto">Mundo abierto
-                        <br>
-                        <input type="checkbox" name="juego" value="puzzles">Puzzles
-                        <input type="checkbox" name="juego" value="tercera persona">Tercera persona
-                        <br>
-                        <input type="checkbox" name="juego" value="retro">Retro
-                        <input type="checkbox" name="juego" value="Indie">Indie
-                        <br>
-                        <p align="center"><input type="submit" value="enviar"></p>
-                    </p>
-                </form>
-            </td></tr>
+        <table align="center" border="20" cellpadding="20">
+            <h2 align="center">Que tipo de juegos te gustan</h2>
+            <form action>
+                <p align="center">
+                    <tr><td><input type="checkbox" name="juego" value="primera persona">Primera persona</td></tr>
+                    <tr><td><input type="checkbox" name="juego" value="historia">Historia</td></tr>
+                    <br>
+                    <tr><td><input type="checkbox" name="juego" value="shooters">Shooters</td></tr>
+                    <tr><td><input type="checkbox" name="juego" value="mundo abierto">Mundo abierto</td></tr>
+                    <br>
+                    <tr><td><input type="checkbox" name="juego" value="puzzles">Puzzles</td></tr>
+                    <tr><td><input type="checkbox" name="juego" value="tercera persona">Tercera persona</td></tr>
+                    <br>
+                    <tr><td><input type="checkbox" name="juego" value="retro">Retro</td></tr>
+                    <tr><td><input type="checkbox" name="juego" value="Indie">Indie</td></tr>
+                    <br>
+                    <tr><td><p align="center"><input type="submit" value="enviar"></p></td></tr>
+                </p>
+            </form>
         </table>
     </body>
 </html>
