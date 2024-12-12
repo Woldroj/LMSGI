@@ -1,5 +1,8 @@
-<!DOCTYPE HTML PUBLIC>
-<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
     <style>
         body {
@@ -7,201 +10,143 @@
             background: linear-gradient(to right, #17a589, #98dacc);
             margin: 0;
             padding: 0;
-            color:rgb(255, 255, 255);
-        }
-
-        body {
-            display: block;
-            margin: 8px;
+            color: rgb(255, 255, 255);
         }
 
         header {
             background-color: #243635;
             display: flex;
             align-items: center;
-            text-align: center;
             justify-content: space-between;
-            width: 860px;
             padding: 10px 20px;
+            max-width: 860px;
             margin: auto;
         }
 
-        div {
-            display: block;
-            unicode-bidi: isolate;
+        header img {
+            width: 80px;
+            height: 80px;
         }
 
-        main {
-            display: block;
-            unicode-bidi: isolate;
-            align-items: center; 
-            position:
+        header h3 {
+            margin: 0;
         }
 
-        .information {
-            padding: 20px;
-            width: 70%;
+        .trabajo {
+            font-size: 1.2em;
+            color: #ddd;
         }
 
-        .experiencias {
-            display: block;
-            unicode-bidi: isolate;
+        .cuerpo {
+            display: flex;
+            max-width: 100%;
+            margin: 20px auto;
         }
 
-        h3 {
-            display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            unicode-bidi: isolate;
-        }
-
-        p {
-            display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            unicode-bidi: isolate;
-        }
-
-        aside {
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            display: block;
-            unicode-bidi: isolate;
-            position:fixed;
-        }
-
-        .sidebar {
+        aside.sidebar {
             background-color: #355250;
-            color:rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
             padding: 20px;
             width: 30%;
             text-align: center;
+            border-radius: 10px;
         }
 
-        section {
-            display: block;
-            unicode-bidi: isolate;
+        .Formacion, .Yo {
+            margin-bottom: 20px;
         }
 
-        .Formacion h2 {
-            display:block;
-            margin-block-start: 0.83em;
-            margin-block-end: 0.83em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            unicode-bidi: isolate;
-            transition: transform 0.3s ease-in-out, background-color 0.3s;
+        .Formacion h2, .Yo h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
         }
 
-        .Formacion p {
-            display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            unicode-bidi: isolate;
+        .Formacion p, .Yo p {
+            margin: 5px 0;
         }
 
-        .Yo h2 {
-            display:block;
-            margin-block-start: 0.83em;
-            margin-block-end: 0.83em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            unicode-bidi: isolate;
-            transition: transform 0.3s ease-in-out, background-color 0.3s;
+        main.information {
+            width: 70%;
+            padding: 20px;
+            background-color: #fff;
+            color: #333;
+            border-radius: 10px;
         }
 
-        .Yo p {
-            display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            unicode-bidi: isolate;
+        section h2 {
+            margin-top: 0;
+            font-size: 2em;
         }
 
+        .experiencias h3 {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        footer {
+            background-color: #243635;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer h2 {
+            margin: 0;
+        }
     </style>
-    <body>
-        <header>
-            <div class="foto"><img src="yo.png" width="80" height="80"></div>
+</head>
+<body>
+    <header>
+        <div class="foto"><img src="yo.png" alt="Foto de Ulises Plata"></div>
+        <div>
             <h3>Ulises Plata</h3>
             <p class="trabajo">Desarrollador Web</p>
-        </header>
-        <div class="cuerpo">
-            <aside class="sidebar">
-                <section class="Formacion">
-                    <h2>Estudios</h2>
-                    <p>Conservatorio 4ºProfesional(2020)</p>
-                    <p>Bachillerato (2023)</p>
-                    <p>Curso de Python (2022)</p>
-                </section>
-                <hr>
-                <section class="Yo">
-                    <h2>Acerca de Mí</h2>
-                    <p>Musico (Guitarra electrica)</p>
-                    <p>Alergico a los Gatos</p>
-                    <p>Disponibilidad para Viajar</p>
-                </section>
-            </aside>
         </div>
+    </header>
+    <div class="cuerpo">
+        <aside class="sidebar">
+            <section class="Formacion">
+                <h2>Estudios</h2>
+                <p>Conservatorio 4º Profesional (2020)</p>
+                <p>Bachillerato (2023)</p>
+                <p>Curso de Python (2022)</p>
+            </section>
+            <hr>
+            <section class="Yo">
+                <h2>Acerca de Mí</h2>
+                <p>Músico (Guitarra eléctrica)</p>
+                <p>Alergico a los Gatos</p>
+                <p>Disponibilidad para Viajar</p>
+            </section>
+        </aside>
         <main class="information">
             <section>
                 <h2>Experiencias</h2>
                 <div class="experiencias">
                     <hr>
-                    <h3>Musica</h3>
-                    <p>
-                        - 8 Años en el Conservatorio de Jerez (Guitarra Flamenca)
-                        <br>
-                        - 2 Años en la escuela de Rock de Jerez (Guitarra Electrica)
-                        <br>
-                        - Conciertos a lo largo de esos 10 años de estudio
-                    </p>
+                    <h3>Música</h3>
+                    <p>- 8 Años en el Conservatorio de Jerez (Guitarra Flamenca)<br>- 2 Años en la escuela de Rock de Jerez (Guitarra Eléctrica)<br>- Conciertos a lo largo de esos 10 años de estudio</p>
                     <hr>
-                    <h3>Programacion</h3>
-                    <p>
-                        - Nociones basicas en el 1ºBachillerato
-                        <br>
-                        - Participante en la Feria de la ciencia 2023
-                        <br>
-                        - Participante en el concurso entre instituos de Jerez
-                    </p>
+                    <h3>Programación</h3>
+                    <p>- Nociones básicas en el 1º Bachillerato<br>- Participante en la Feria de la Ciencia 2023<br>- Participante en el concurso entre institutos de Jerez</p>
                     <hr>
                     <h3>Aficiones</h3>
-                    <p>
-                        - Tocar la Guitarra
-                        <br>
-                        - Hacer Deporte
-                        <br>
-                        - Jugar Ajedrez (1º Competicion de Ajedrez de mi instituto)
-                    </p>
+                    <p>- Tocar la Guitarra<br>- Hacer Deporte<br>- Jugar Ajedrez (1º Competición de Ajedrez de mi instituto)</p>
                     <hr>
                     <h3>Idiomas</h3>
-                    <p>
-                        - Ingles
-                        <br>
-                        - Español 
-                        <br>
-                        - Nociones Básicas de Noruego
-                    </p>
+                    <p>- Inglés<br>- Español<br>- Nociones Básicas de Noruego</p>
                     <hr>
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="Pie">
-                <section class="Contacto">
-                    <h2>Contacto</h2>
-                    <p>☎️ 686-94-07-74</p>
-                    <p>📧 uplapin0804@g.educaand.es</p>
-                    <p>📍 Jerez de la Frontera (San Telmo Nuevo) 11408</p>
-                </section>
-            </div>
-        </footer>
-    </body>
+    </div>
+    <footer>
+        <section class="Contacto">
+            <h2>Contacto</h2>
+            <p>☎️ 686-94-07-74</p>
+            <p>📧 uplapin0804@g.educaand.es</p>
+            <p>📍 Jerez de la Frontera (San Telmo Nuevo) 11408</p>
+        </section>
+    </footer>
+</body>
 </html>
