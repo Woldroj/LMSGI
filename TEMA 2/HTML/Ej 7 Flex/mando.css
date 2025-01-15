@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
-    display: block;
+    display: grid;
     align-items: center;
 }
 
