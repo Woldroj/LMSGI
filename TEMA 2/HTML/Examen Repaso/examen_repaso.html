@@ -11,13 +11,70 @@
         display: block;
         unicode-bidi: isolate;
     }
+
+    h1, h2, h3, p{
+        margin:0;
+        padding:0;
+    }
+    .logo {
+        border:none;
+    }
+    header, footer, main, section, article, nav {
+        border:2px solid #777;
+
+    }
+    header {
+        clear:both;
+    }
+    nav {
+        clear:both;
+    }
+    aside, .noticias {
+        float:left;
+        width:20%;
+    }
+    main {
+        float:right;
+        width:78%;
+    }
+    main, article {
+        float:left;
+        width: 78%;
+    }
+    main, .derecha {
+        float:right;
+        width: 20%;
+    }
+    footer {
+        clear:both;
+    }
+    header, .logo {
+        float:left;
+    }
+    header, .buscador {
+        float:right;
+    }
+    nav, p {
+        display:inline; 
+        float: left;
+    }
+    main, section, article, img {
+        width:100px;
+        float:left;
+    }
+    footer, .enlaces {
+        float:left;
+    }
+    footer, .copyright{
+        float:right;
+    }
 </style>
 <html>
     <body>
         <header>
             <div class="logo">
-                <a href="U.png"></a>
-                <p>Buscar:<input type="text"></p>
+                <h1>LOGOTIPO</h1>
+                <p class="buscador">Buscar:<input type="text"></p>
             </div>
         </header>
         <nav>
@@ -31,6 +88,7 @@
             <section>
                 <article>
                     <h3>Lorem ipsum dolor sit amet, consecteur adipiscing elit</h3>
+                    <img src="Perrito.png">
                     <p>
                         Nullam est lacus, suscript ut, dapibus quis, condimentum ac, 
                         risus. Vivamus vestibulum, ipsum solicitudin faucibus
@@ -54,6 +112,7 @@
                 </article>
                 <article>
                     <h3>Vivamus lobortis turpis ac ante fringilla faucibus</h3>
+                    <img src="U.png">
                     <table border="1">
                         <tr><th>País</th><th>2000</th><th>2001</th><th>2002</th><th>2003</th><th>2004</th></tr>
                         <tr><td>UE (27 países)</td><td>8.9</td><td>8.7</td><td>9</td><td>9.1</td><td>9.3</td></tr>
@@ -115,7 +174,7 @@
             </aside>
         </main>
         <footer>
-            <span class="enlaces">
+            <div class="enlaces">
                 <a href="#">Nulla</a>
                 " | "
                 <a href="#">Pharetra</a>
@@ -127,7 +186,7 @@
                 <a href="#">Proin</a>
                 " | "
                 <a href="#">Placerat</a>
-            </span>
+            </div>
             <span class="copyright">© Copyright Lorem ipsum</span>
         </footer>
     </body>
