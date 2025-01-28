@@ -1,193 +1,269 @@
 <!DOCTYPE html>
-<style>
-    body {
-        display:block;
-        margin:8px;
-        width: 90%;
-        max-width: 900px;
-    }
-
-    div {
-        display: block;
-        unicode-bidi: isolate;
-    }
-
-    h1, h2, h3, p{
-        margin:0;
-        padding:0;
-    }
-    .logo {
-        border:none;
-    }
-    header, footer, main, section, article, nav {
-        border:2px solid #777;
-
-    }
-    header {
-        clear:both;
-    }
-    nav {
-        clear:both;
-    }
-    aside, .noticias {
-        float:left;
-        width:20%;
-    }
-    main {
-        float:right;
-        width:78%;
-    }
-    main, article {
-        float:left;
-        width: 78%;
-    }
-    main, .derecha {
-        float:right;
-        width: 20%;
-    }
-    footer {
-        clear:both;
-    }
-    header, .logo {
-        float:left;
-    }
-    header, .buscador {
-        float:right;
-    }
-    nav, p {
-        display:inline; 
-        float: left;
-    }
-    main, section, article, img {
-        width:100px;
-        float:left;
-    }
-    footer, .enlaces {
-        float:left;
-    }
-    footer, .copyright{
-        float:right;
-    }
-</style>
 <html>
-    <body>
-        <header>
-            <div class="logo">
-                <h1>LOGOTIPO</h1>
-                <p class="buscador">Buscar:<input type="text"></p>
+<head>
+    <style>
+        /* General Body Style */
+        body {
+            display: block;
+            margin: 8px;
+            width: 90%;
+            max-width: 900px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* General Reset */
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Layout containers */
+        header, footer, main, section, article, nav, aside {
+            border: 2px solid #777;
+            margin-bottom: 20px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        /* Logo */
+        .logo {
+            flex-grow: 1;
+        }
+
+        /* Search bar */
+        .buscador {
+            display: flex;
+            align-items: center;
+        }
+
+        .buscador input {
+            padding: 5px;
+            margin-left: 5px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        nav p {
+            margin: 0;
+            padding: 10px;
+        }
+
+        /* Main Layout */
+        main {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        /* Section and Articles */
+        section {
+            display: flex;
+            flex-direction: column;
+            width: 70%; /* Main content */
+            padding: 10px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        /* Images inside articles */
+        article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Sidebar (Aside) */
+        aside {
+            width: 28%; /* Sidebar */
+            padding: 10px;
+        }
+
+        /* Right-side div (derecha) */
+        .derecha {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .derecha h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        /* Enlaces */
+        .enlaces {
+            display: flex;
+            gap: 10px;
+        }
+
+        .enlaces a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        /* Copyright */
+        .copyright {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Noticias and Publicidad */
+        .noticias, .publicidad {
+            margin-bottom: 20px;
+        }
+
+        .sub {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Links in paragraphs (custom color) */
+        p[color="blue"] {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>LOGOTIPO</h1>
+        </div>
+        <p class="buscador">Buscar: <input type="text"></p>
+    </header>
+
+    <nav>
+        <p>Lorem</p>
+        <p>Ipsum</p>
+        <p>Dolor</p>
+        <p>Sit</p>
+        <p>Amet</p>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <h3>Lorem ipsum dolor sit amet, consecteur adipiscing elit</h3>
+                <img src="Perrito.png" alt="Imagen">
+                <p>
+                    Nullam est lacus, suscript ut, dapibus quis, condimentum ac, 
+                    risus. Vivamus vestibulum, ipsum solicitudin faucibus
+                    phareta, dolor metus fringila dui, vei aliquet pede diam
+                    tempor tortor.
+                </p>
+                <br>
+                <p>
+                    Vestibulum pulvinar urne et quam. Pellentesque habitant 
+                    morbi tristique senectus et netus et malesuada fames ac
+                    turpis egestas. Nullam vel turpis vitae dui imperdiet laoreet. Quisque eget
+                    ipsum.
+                </p>
+                <br>
+                <p>
+                    Donec commodo, turpis vei venenatis solicitudin, quam ante convallis justo,
+                    sed eleifend justo lectus quis sapien. Ut consequat libero eget est.
+                </p>
+                <br>
+                <p>Seguir leyendo...</p>
+            </article>
+            <article>
+                <h3>Vivamus lobortis turpis ac ante fringilla faucibus</h3>
+                <img src="U.png" alt="Imagen">
+                <table border="1">
+                    <tr><th>País</th><th>2000</th><th>2001</th><th>2002</th><th>2003</th><th>2004</th></tr>
+                    <tr><td>UE (27 países)</td><td>8.9</td><td>8.7</td><td>9</td><td>9.1</td><td>9.3</td></tr>
+                    <tr><td>España</td><td>11.9</td><td>10.6</td><td>11.5</td><td>11.5</td><td>11</td></tr>
+                    <tr><td>Grecia</td><td>11.2</td><td>10.7</td><td>10.3</td><td>9.7</td><td>10.6</td></tr>
+                    <tr><td>Estados Unidos</td><td>4</td><td>4.8</td><td>5.8</td><td>6</td><td>5.5</td></tr>
+                    <tr><td>Japón</td><td>4.7</td><td>5</td><td>5.4</td><td>5.3</td><td>4.7</td></tr>
+                </table>
+            </article>
+        </section>
+
+        <div class="derecha">
+            <h3>Phasellus blandit</h3>
+            <p>
+                Praesent sodales imperdiet augue. 
+                Mauris lorem felis, semper eu, tincidunt eu, sollicitudin eget, sem. Nulla facilisi.
+                 Morbi ut enim ut enim ultricies dapibus.
+            </p>
+            <p color="blue">Seguir leyendo...</p>
+            <h3>Nullam vel turpis</h3>
+            <p>Donec commodo, turpis vel venenatis sollicitudin, quam ante convallis justo, sed eleifend justo lectus quis sapien. 
+                Ut consequat libero eget est.
+            </p>
+            <p color="blue">Seguir leyend...</p>
+        </div>
+
+        <aside>
+            <div class="noticias">
+                <p>Noticias</p>
+                <p class="sub">dd/mm/aaaa</p>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p class="sub">dd/mm/aaaa</p>
+                <p>Consecteur adipiscing elit</p>
+                <p class="sub">dd/mm/aaaa</p>
+                <p>Donec molestie nunc eu sapien</p>
+                <p class="sub">dd/mm/aaaa</p>
+                <p>Maecenas aliguam dolor eget metus</p>
+                <p class="sub">dd/mm/aaaa</p>
+                <p>Fusce trisque lorem id metus</p>
+                <h4>Enlaces relacionados</h4>
+                <p>Proin placerat</p>
+                <p>Nulla in felis</p>
+                <p>Nam luctus</p>
             </div>
-        </header>
-        <nav>
-            <p>Lorem</p>
-            <p>Ipsum</p>
-            <p>Dolor</p>
-            <p>Sit</p>
-            <p>Amet</p>
-        </nav>
-        <main>
-            <section>
-                <article>
-                    <h3>Lorem ipsum dolor sit amet, consecteur adipiscing elit</h3>
-                    <img src="Perrito.png">
-                    <p>
-                        Nullam est lacus, suscript ut, dapibus quis, condimentum ac, 
-                        risus. Vivamus vestibulum, ipsum solicitudin faucibus
-                        phareta, dolor metus fringila dui, vei aliquet pede diam
-                        tempor tortor.
-                    </p>
-                    <br>
-                    <p>
-                        Vestibulum pulvinar urne et quam. Pellentesque habitant 
-                        morbi tristique senectus et netus et malesuada fames ac
-                        turpis egestas. Nullam vel turpis vitae dui imperdiet laoreet. Quisque eget
-                        ipsum.
-                    </p>
-                    <br>
-                    <p>
-                        Donec commodo, turpis vei venenatis solicitudin, quam ante convallis justo,
-                        sed eleifend justo lectus quis sapien. Ut consequat libero eget est.
-                    </p>
-                    <br>
-                    <p>Seguir leyendo...</p>
-                </article>
-                <article>
-                    <h3>Vivamus lobortis turpis ac ante fringilla faucibus</h3>
-                    <img src="U.png">
-                    <table border="1">
-                        <tr><th>País</th><th>2000</th><th>2001</th><th>2002</th><th>2003</th><th>2004</th></tr>
-                        <tr><td>UE (27 países)</td><td>8.9</td><td>8.7</td><td>9</td><td>9.1</td><td>9.3</td></tr>
-                        <tr><td>España</td><td>11.9</td><td>10.6</td><td>11.5</td><td>11.5</td><td>11</td></tr>
-                        <tr><td>Grecia</td><td>11.2</td><td>10.7</td><td>10.3</td><td>9.7</td><td>10.6</td></tr>
-                        <tr><td>Estados Unidos</td><td>4</td><td>4.8</td><td>5.8</td><td>6</td><td>5.5</td></tr>
-                        <tr><td>Japón</td><td>4.7</td><td>5</td><td>5.4</td><td>5.3</td><td>4.7</td></tr>
-                    </table>
-                </article>
-                <div class="derecha">
-                    <h3>Phasellus blandit</h3>
-                    <p>
-                        Praesent sodales imperdiet augue. 
-                        Mauris lorem felis, semper eu, tincidunt eu, sollicitudin eget, sem. Nulla facilisi.
-                         Morbi ut enim ut enim ultricies dapibus.
-                    </p>
-                    <p color="blue">Seguir leyendo...</p>
-                    <h3>Nullam vel turpis</h3>
-                    <p>Donec commodo, turpis vel venenatis sollicitudin, quam ante convallis justo, sed eleifend justo lectus quis sapien. 
-                        Ut consequat libero eget est.
-                    </p>
-                    <p color="blue">Seguir leyend...</p>
-                </div>
-            </section>
-            <aside>
-                <div class="noticias">
-                    <p>Noticias</p>
-                    <p class="sub">dd/mm/aaaa</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <p class="sub">dd/mm/aaaa</p>
-                    <br>
-                    <p>Consecteur adipiscing elit</p>
-                    <p class="sub">dd/mm/aaaa</p>
-                    <br>
-                    <p>Donec molestie nunc eu sapien</p>
-                    <p class="sub">dd/mm/aaaa</p>
-                    <br>
-                    <p>Maecenas aliguam dolor eget metus</p>
-                    <p class="sub">dd/mm/aaaa</p>
-                    <br>
-                    <p>Fusce trisque lorem id metus</p>
-                    <h4>Enlaces relaccionados</h4>
-                    <p>Proin placerat</p>
-                    <p>Nulla in felis</p>
-                    <p>Nam luctus</p>
-                </div>
-                <div class="publicidad">
-                    <h4>Publicidad</h4>
-                    <p>
-                        Etiam fermentum, nisl tincidunt blandit inertdum
-                        massa velit posuere dolor, sed euismod sem odio at mi.                  
-                    </p>
-                    <p>
-                        Duis porta placerat arcu. Nullam felis pede, commodo vel, suscipit a, molestie vel, felis. Maecenas mattis est vel est.
-                    </p>
-                    <p color="blue">Seguir leyendo...</p>
-                </div>
-            </aside>
-        </main>
-        <footer>
-            <div class="enlaces">
-                <a href="#">Nulla</a>
-                " | "
-                <a href="#">Pharetra</a>
-                " | "
-                <a href="#">Luctus</a>
-                " | "
-                <a href="#">Ipsum</a>
-                " | "
-                <a href="#">Proin</a>
-                " | "
-                <a href="#">Placerat</a>
+            <div class="publicidad">
+                <h4>Publicidad</h4>
+                <p>
+                    Etiam fermentum, nisl tincidunt blandit inertdum
+                    massa velit posuere dolor, sed euismod sem odio at mi.                  
+                </p>
+                <p>
+                    Duis porta placerat arcu. Nullam felis pede, commodo vel, suscipit a, molestie vel, felis. Maecenas mattis est vel est.
+                </p>
             </div>
-            <span class="copyright">© Copyright Lorem ipsum</span>
-        </footer>
-    </body>
+        </aside>
+
+    </main>
+
+    <footer>
+        <div class="enlaces">
+            <a href="#">Nulla</a>
+            <span>|</span>
+            <a href="#">Pharetra</a>
+            <span>|</span>
+            <a href="#">Luctus</a>
+            <span>|</span>
+            <a href="#">Ipsum</a>
+            <span>|</span>
+            <a href="#">Proin</a>
+            <span>|</span>
+            <a href="#">Placerat</a>
+        </div>
+        <span class="copyright">© Copyright Lorem ipsum</span>
+    </footer>
+
+</body>
 </html>
