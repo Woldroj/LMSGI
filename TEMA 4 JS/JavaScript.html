@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        body {
+            display: flexbox;
+            background-color: rgb(49, 49, 49);
+            font-style: white;
+            padding: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size:xx-large;
+            border: solid white;
+            border-radius: 5px;
+            font-style: white;
+            box-shadow:rgb(255, 251, 251)
+        }
+    </style>
     <body>
+        <header>
+            <h1>Ejercicios JavaScript</h2>
+        </header>
+        <h2>Ejercicio Sumatorio</h2>
         <script>
-            "use strict"
-            let suma = 0
-            for (let pos in vector_numeros) {
-                let desviacion = Math.abs(vector_numeros[pos] - media)
+            "use strict";
+            let vector_numeros = [];
+            for (let i = 0; i < 100; i++) {
+                vector_numeros.push(Math.floor(Math.random()*100) + 1);
             }
-            let desv_media = suma /vector_numeros.length
-            document.write("<br/> La desv media es: " + desv_media)
+            let suma = 0;
+            for (let num of vector_numeros) {
+                suma += num;
+            }
+
+            document.write("El sumatorio de los 100 numeros es: " + suma);
         </script>
     </body>
 </html>
