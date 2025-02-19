@@ -13,8 +13,21 @@
             font-size:xx-large;
             border: solid white;
             border-radius: 5px;
-            font-style: white;
-            box-shadow:rgb(255, 251, 251)
+            color: aliceblue;
+            text-shadow: 10px;
+        }
+
+        h2 {
+            margin-top: 10px;
+            color:aliceblue;
+            border: solid;
+            margin-right: 80%;
+            border-radius: 5px;
+        }
+
+        p {
+            margin-top: 10px;
+            color: aliceblue;
         }
     </style>
     <body>
@@ -33,7 +46,40 @@
                 suma += num;
             }
 
-            document.write("El sumatorio de los 100 numeros es: " + suma);
+            document.write("<p> -El sumatorio de los 100 numeros es: " + suma + "</p>");
         </script>
+        <hr>
+        <h2>EJercicio Pares e impares</h2>
+        <script>
+            "use strict"
+            let numeros = [];
+            let par = 0, impar = 0;
+
+            while (true) {
+                let sc = prompt("Introduzca un numero (0 para terminar)")
+                
+                if (sc === null || sc.trim()==="" || isNaN(sc) || Number(sc)===0) {
+                    break;
+                }
+
+                let numero = Number(sc);
+                numeros.push(numero);
+
+                if (numero % 2 === 0) {
+                    par++;
+                }else {
+                    impar++;
+                }
+            }
+
+            if (numeros.length > 0) {
+                document.write("<p>El array de entrada es: [${numeros.join(", ")}]</p>");
+                document.write("<p>Numeros pares: " + par + "</p>");
+                document.write("<p>Numeros impares: " + impar + "</p>");
+            }else {
+                document.write("<p>No se ingresaron números válidos.</p>")
+            }
+        </script>
+        <hr>
     </body>
 </html>
