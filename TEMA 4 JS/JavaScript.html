@@ -92,14 +92,14 @@
             let min = 2000000;
 
             while (true) {
-                let sc = prompt("Introduzca un numero (0 para terminar)")
+                let scn = prompt("Vuelva a meter valores (0 para terminar)")
 
-                if (sc === null || sc.trim()==="" || isNaN(sc) || Number(sc)===0) {
+                if (scn === null || scn.trim()==="" || isNaN(scn) || Number(scn)===0) {
                     break;
                 }
                 
-                let numero = Number(sc);
-                numeros2.push(numero);
+                let nume = Number(scn);
+                numeros2.push(nume);
                 for (let i = 0; i < numeros2.length(); i++) {
                     let suma = numeros2[i] + numeros2[i - 1];
 
@@ -110,8 +110,8 @@
                     min = numeros2[i];
                 }
             }
-            if (numeros.length > 0) {
-                document.write("<p>El array de entrada es: " + numeros + "</p>");
+            if (numeros2.length > 0) {
+                document.write("<p>El array de entrada es: " + numeros2 + "</p>");
                 document.write("<p>La suma total es: " + suma + "</p>");
                 document.write("<p>Numero mayor: " + max + "</p>");
                 document.write("<p>Numeros menor: " + min + "</p>");
