@@ -92,6 +92,7 @@
             let min = 2000000;
             let sumas = 0;
             let multiplicacion = 1;
+            let impares = 0;
 
             while (true) {
                 let scn = prompt("Vuelva a meter valores (0 para terminar)")
@@ -102,6 +103,10 @@
                 
                 let nume = Number(scn);
                 numeros2.push(nume);
+
+                if (nume % 2 != 0) {
+                    impares++;
+                }
                
             }
             for (let i = 0; i < numeros2.length; i++) {
@@ -123,6 +128,7 @@
                 document.write("<p>La multiplicacion de todos los numeros es: " + multiplicacion + "</p>")
                 document.write("<p>Numero mayor: " + max + "</p>");
                 document.write("<p>Numeros menor: " + min + "</p>");
+                document.write("<p>Numeros impares: " + impares + "</p>");
             }else {
                 document.write("<p>No se ingresaron números válidos.</p>")
             }
