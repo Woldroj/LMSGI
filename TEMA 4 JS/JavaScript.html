@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
     <title>
         Ejercicios JavaScript
     </title>
     <style>
         body {
-            display: flexbox;
+            display: block;
             background-color: rgb(49, 49, 49);
             font-style: white;
             padding: 5px;
+            border: solid white;
+            border-radius: 10px;
+            margin-top: 40px;
+            margin-left: 33%;
+            margin-right: 33%;
         }
 
         h1 {
@@ -31,6 +39,15 @@
         p {
             margin-top: 10px;
             color: aliceblue;
+        }
+
+        #btnpar, #btnimpar {
+            background-color: white;
+            font-style: white;
+            display: flexbox;
+            padding: 5px;
+            border:solid rgb(49, 49, 49);
+            border-radius: 5px;
         }
     </style>
     <body>
@@ -77,12 +94,24 @@
 
             if (numeros.length > 0) {
                 document.write("<p>El array de entrada es: " + numeros + "</p>");
-                document.write("<p>Numeros pares: " + par + "</p>");
-                document.write("<p>Numeros impares: " + impar + "</p>");
+                document.write("<p id=pares>Numeros pares: " + par + "</p>");
+                document.write("<p id=impares>Numeros impares: " + impar + "</p>");
             }else {
                 document.write("<p>No se ingresaron números válidos.</p>")
             }
         </script>
+        <script>
+            $(document).ready(function(){
+            $("#btnpar").click(function(){
+                  $("#pares").toggle(500);
+                });
+            $("#btnimpar").click(function(){
+                    $("#impares").toggle(500);
+                });
+            });
+        </script>
+        <button id="btnpar">Pares</button>
+        <button id="btnimpar">Impares</button>
         <hr>
         <h2>Ejercicio sumatorio</h2>
         <script>
