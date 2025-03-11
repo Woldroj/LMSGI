@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip con jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        /* Contenedor del tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        /* Estilo del texto emergente */
+        .tooltip-text {
+            position: absolute;
+            bottom: 125%; /* Lo coloca arriba del texto */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none; /* Evita que interfiera con otros elementos */
+        }
+
+        /* Flecha del tooltip */
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Pasa el mouse sobre <span class="tooltip">este texto</span></p>
+
+    <script>
+        $(document).ready(function() {
+            $(".tooltip").hover(function() {
+                // Crear el tooltip si no existe
+                if (!$(this).find(".tooltip-text").length) {
+                    $(this).append('<span class="tooltip-text">¡Hola! Soy un tooltip</span>');
+                }
+                $(this).find(".tooltip-text").css("opacity", "1");
+            }, function() {
+                $(this).find(".tooltip-text").css("opacity", "0");
+            });
+        });
+    </script>
+
+</body>
+</html>

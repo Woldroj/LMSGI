@@ -45,8 +45,14 @@
         }
 
         p {
+            padding: 5px;
             margin-top: 10px;
-            color: aliceblue;
+            color: black;
+            border: none;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: white 10px;
+
         }
 
         .botonoes {
@@ -67,6 +73,41 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip-text {
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: aliceblue;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.5s;
+            pointer-events: none;
+        }
+
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: aliceblue transparent transparent transparent;
+        }
+
+        .underline {
+             text-decoration: underline;
+        }
     </style>
     <body>
         <header>
@@ -84,7 +125,7 @@
                 suma += num;
             }
 
-            document.write("<p> -El sumatorio de los 100 numeros es: " + suma + "</p>");
+            document.write("<p>El <span class=tooltip><span class=underline>sumatorio</span></span> de los 100 numeros es: " + suma + "</p>");
         </script>
         <hr>
         <h2>Ejercicio Pares e impares</h2>
@@ -181,6 +222,19 @@
             }else {
                 document.write("<p>No se ingresaron números válidos.</p>")
             }
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".tooltip").hover(function() {
+                    if (!$(this).find(".tooltip-text").length) {
+                        $(this).append('<span class="tooltip-text"> El sumatorio se obtiene al sumar todos los numeros de una cadena de numeros</span>')
+                    }
+                    $(this).find(".tooltip-text").css("opacity", "1");
+
+                }, function() {
+                    $(this).find(".tooltip-text").css("opacity", "0");
+                });
+            });
         </script>
     </body>
 </html>
