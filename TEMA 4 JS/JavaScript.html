@@ -55,9 +55,8 @@
 
         }
 
-        .botonoes {
+        .botones {
             display:flex;
-            justify-content: space-between;
             gap: 10px;
             margin-top: 10px;
             width: 100%;
@@ -223,6 +222,7 @@
                 document.write("<p>No se ingresaron números válidos.</p>")
             }
         </script>
+<<<<<<< HEAD
         <script>
             $(document).ready(function(){
                 $(".tooltip").hover(function() {
@@ -235,6 +235,37 @@
                     $(this).find(".tooltip-text").css("opacity", "0");
                 });
             });
+=======
+        <hr>
+        <h2>Calculadora:</h2>
+        <script>
+            function calcular() {
+                let num1 = parseFloat(document.getElementById("num1").value);
+                let num2 = parseFloat(document.getElementById("num2").value);
+                let operacion = document.getElementById("operacion").value;
+                let resultado = 0;
+
+                if (isNaN(num1) || isNaN(num2)) {
+                    alert("Por favor introduzca valores correctos")
+                    return;
+                }
+
+                switch (operacion) {
+                    case "sumar":
+                    resultado = num1 + num2;
+                    break;
+                    case "restar":
+                    resultado = num1 - num2;
+                    break;
+                    case "multiplicar": 
+                    resultado = num1 * num2;
+                    break;
+                    case "dividir": 
+                    resultado = num1/num2;
+                    break;
+                }
+            }
+>>>>>>> 1b01b19713798519c228a0e1813e189586d8a879
         </script>
     </body>
 </html>
