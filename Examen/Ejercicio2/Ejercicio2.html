@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Ejercicio 2
+    </title>
+    <body>
+        <script>
+            let resultado = 1;
+            let sc = prompt("Introduzca un numero")
+            let numero = Number(sc);
+
+            for (let i = 1; i < numero + 1; i++) {
+                document.write("<p> La tabla del: " + i + "</p>")
+                for (let j = 1; j < 11; j++) {
+                    resultado = i * j;
+                    document.writeln("<p>" + i + "x" + j + " = " + resultado + "</p>")
+                }
+            }
+        </script>
+    </body>
+</html>

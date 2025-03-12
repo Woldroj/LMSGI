@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <scrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></scrip>
-        <script src="/Examen/Ejercicio1/Ejercicio1.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <title>
         Ejercicio 1
     </title>
     <body>
+        <script>
+            $(document).ready(function(){
+            $("#enlace_1").click(function(){
+                    $("#contenido_1").toggle(500);
+                    $("#enlace_1").text("Mostrar Contenido")
+                });
+            $("#enlace_2").click(function(){
+                    $("#contenido_2").toggle(500);
+                    $("#enlace_2").text("Mostrar Contenido")
+                });
+            $("#enlace_3").click(function(){
+                    $("#contenido_3").toggle(500);
+                    $("#enlace_3").text("Mostrar Contenido")
+                });
+            });     
+        </script>
         <p id="contenido_1">
             Parrafo 1 con mucho texto y aburrido que en el examen esta en latin 
             y no mola tener que copiar todo el texto asi que me lo invento.
@@ -25,18 +40,5 @@
             espero que dentro de 40 minutos termine el examen con satisfaccion la verdad bueno eso.
         </p>
         <a id="enlace_3" href="#">Ocultar contenido</a>
-        <script>
-            $(document).ready(function(){
-                $("#enlace_1").click(function(){
-                    $("#contenido_1").toggle(500);
-                });
-                $("#enlace_2").click(function(){
-                    $("#contenido_2").toggle(500);
-                });
-                $("#enlace_3").click(function(){
-                    $("#contenido_3").toggle(500);
-                });
-            });     
-        </script>
     </body>
 </html>
