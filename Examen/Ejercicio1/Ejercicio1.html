@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <scrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></scrip>
+        <script src="/Examen/Ejercicio1/Ejercicio1.js"></script>
+    </head>
+    <title>
+        Ejercicio 1
+    </title>
+    <body>
+        <p id="contenido_1">
+            Parrafo 1 con mucho texto y aburrido que en el examen esta en latin 
+            y no mola tener que copiar todo el texto asi que me lo invento.
+        </p>
+        <a id="enlace_1" href="#">Ocultar Contenido</a>
+        <br/>
+        <p id="contenido_2">
+            Parrafo 2 tengo que hacerlo otra vez mas y probablemente una tercera,
+            solo escribo para que esto funcione y tener guia, no me juzgue profesor.
+        </p>
+        <a id="enlace_2" href="#">Ocultar Contenido</a>
+        <br/>
+        <p id="contenido_3">
+            Parrafo 3 ya estamos en el ultimo parrafo no voy a tener que escribir mas cosas sin sentido
+            espero que dentro de 40 minutos termine el examen con satisfaccion la verdad bueno eso.
+        </p>
+        <a id="enlace_3" href="#">Ocultar contenido</a>
+        <script>
+            $(document).ready(function(){
+                $("#enlace_1").click(function(){
+                    $("#contenido_1").toggle(500);
+                });
+                $("#enlace_2").click(function(){
+                    $("#contenido_2").toggle(500);
+                });
+                $("#enlace_3").click(function(){
+                    $("#contenido_3").toggle(500);
+                });
+            });     
+        </script>
+    </body>
+</html>
