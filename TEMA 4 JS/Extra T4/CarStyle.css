@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.motor, .transmision, .traccion, .carroceria, .puertas {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px  #d4d4d4;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+}

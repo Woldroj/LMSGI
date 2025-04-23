@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tooltip con jQuery</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <style>
-        /* Contenedor del tooltip */
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-        }
-
-        /* Estilo del texto emergente */
-        .tooltip-text {
-            position: absolute;
-            bottom: 125%; /* Lo coloca arriba del texto */
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: black;
-            color: white;
-            padding: 5px;
-            border-radius: 5px;
-            white-space: nowrap;
-            opacity: 0;
-            transition: opacity 0.3s;
-            pointer-events: none; /* Evita que interfiera con otros elementos */
-        }
-
-        /* Flecha del tooltip */
-        .tooltip-text::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: black transparent transparent transparent;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Buscador de Autos IA</title>
 </head>
 <body>
+  <h1>Configurá tu auto ideal</h1>
 
-    <p>Pasa el mouse sobre <span class="tooltip">este texto</span></p>
+  <form id="carForm">
+    <label>Tipo de motor:
+      <select id="motor">
+        <option>Gasolina</option>
+        <option>Diésel</option>
+        <option>Híbrido</option>
+        <option>Eléctrico</option>
+      </select>
+    </label><br />
 
-    <script>
-        $(document).ready(function() {
-            $(".tooltip").hover(function() {
-                // Crear el tooltip si no existe
-                if (!$(this).find(".tooltip-text").length) {
-                    $(this).append('<span class="tooltip-text">¡Hola! Soy un tooltip</span>');
-                }
-                $(this).find(".tooltip-text").css("opacity", "1");
-            }, function() {
-                $(this).find(".tooltip-text").css("opacity", "0");
-            });
-        });
-    </script>
+    <label>Transmisión:
+      <select id="transmision">
+        <option>Manual</option>
+        <option>Automática</option>
+      </select>
+    </label><br />
 
+    <label>Tracción:
+      <select id="traccion">
+        <option>Delantera</option>
+        <option>Trasera</option>
+        <option>4x4</option>
+      </select>
+    </label><br />
+
+    <label>Carrocería:
+      <select id="carroceria">
+        <option>Sedán</option>
+        <option>SUV</option>
+        <option>Hatchback</option>
+        <option>Pickup</option>
+      </select>
+    </label><br />
+
+    <label>Puertas:
+      <select id="puertas">
+        <option>2</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </label><br />
+
+    <button type="submit">Buscar autos</button>
+  </form>
+
+  <pre id="resultado"></pre>
+
+  <script src="script.js"></script>
 </body>
 </html>
