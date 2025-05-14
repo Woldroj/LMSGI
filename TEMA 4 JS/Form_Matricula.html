@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../TEMA 4 JS/Extra T4/Form_Matricula.css">
+    <script src="../TEMA 4 JS/Extra T4/Form_Matricula.js" defer></script>
+    <title>Matricula Alumnos</title>
+</head>
+<body>
+<div class="ventana">
+  <h2>Matrícula Flexible</h2>
+
+  <form class="matricula" id="matriculaForm">
+    <h3>Asignaturas</h3>
+    <label><input type="checkbox" name="asignatura" value="Matemáticas I" data-horas> Matemáticas I - Horas: 
+      <input type="number" name="horas_M1" min="0" value="0">
+    </label><br>
+
+    <label><input type="checkbox" name="asignatura" value="Historia" data-horas> Historia - Horas: 
+      <input type="number" name="horas_H" min="0" value="0">
+    </label><br>
+
+    <label><input type="checkbox" name="asignatura" value="Matemáticas II" data-horas> Matemáticas II - Horas: 
+      <input type="number" name="horas_M2" min="0" value="0">
+    </label><br>
+
+    <label><input type="checkbox" name="asignatura" value="Física" data-horas> Física - Horas: 
+      <input type="number" name="horas_F" min="0" value="0">
+    </label><br><br>
+
+    <label><input type="checkbox" id="antiguoAlumno"> Soy antiguo alumno</label><br>
+    <label><input type="checkbox" id="beca"> Tengo beca</label><br><br>
+
+    <button type="button" onclick="calcularPrecio()">Calcular Precio</button>
+  </form>
+
+  <div id="resultado" class="precio"></div>
+</div>
+</body>
+</html>

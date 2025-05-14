@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .ventana {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    max-width: 90%;
+  }
+
+  h2, h3 {
+    text-align: center;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin: 10px 0;
+    color: #444;
+  }
+
+  input[type="number"] {
+    width: 60px;
+    margin-left: 10px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #0052a3;
+  }
+
+  .error {
+    color: #cc0000;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .precio {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #222;
+  }
