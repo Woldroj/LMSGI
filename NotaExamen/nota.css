@@ -1,0 +1,67 @@
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Caja central con sombra */
+  .contenedor {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  /* Etiquetas */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Opciones con radio buttons */
+  .options {
+    margin-top: 15px;
+  }
+  
+  .options label {
+    font-weight: normal;
+    display: block;
+    margin: 5px 0;
+  }
+  
+  /* Botón */
+  button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Resultado */
+  #resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #fff3cd;
+    padding: 10px;
+    border-left: 5px solid #ffeeba;
+    border-radius: 5px;
+  }
+  
